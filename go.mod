@@ -3,9 +3,12 @@ module github.com/configservice
 go 1.23.0
 
 require (
+	github.com/gorilla/schema v1.4.1
+	github.com/thoas/go-funk v0.9.3
 	github.com/uptrace/bun v1.2.11
 	github.com/uptrace/bun/dialect/pgdialect v1.2.11
 	github.com/uptrace/bun/driver/pgdriver v1.2.11
+	go.uber.org/zap v1.27.0
 )
 
 require (
@@ -16,6 +19,7 @@ require (
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
 	go.opentelemetry.io/otel v1.34.0 // indirect
 	go.opentelemetry.io/otel/trace v1.34.0 // indirect
+	go.uber.org/multierr v1.10.0 // indirect
 	golang.org/x/crypto v0.35.0 // indirect
 	golang.org/x/sys v0.30.0 // indirect
 	mellium.im/sasl v0.3.2 // indirect
