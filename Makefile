@@ -4,5 +4,8 @@ dep: ## Get the dependencies
 run:
 	source local-env.sh && ./tools/run.sh
 
+migrate:
+	source local-env.sh && ./tools/sqllite-migrate.sh
+
 test:
 	go test -cover ./...
