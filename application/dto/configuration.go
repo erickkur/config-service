@@ -5,3 +5,6 @@ type CreateConfigurationRequest struct {
 	Version int32  `json:"version"`
 	Data    string `json:"data"`
 }
+
+type CreateConfigurationResponse struct {
+}

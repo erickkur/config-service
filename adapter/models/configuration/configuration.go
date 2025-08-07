@@ -1,9 +1,9 @@
-package config
+package configuration
 
 import (
 	"context"
 
-	pg "github.com/configservice/adapter/database/sqllite"
+	sl "github.com/configservice/adapter/database/sqllite"
 	"github.com/configservice/adapter/models/base"
 	"github.com/configservice/adapter/models/recordtimestamp"
 	"github.com/uptrace/bun"
@@ -27,7 +27,7 @@ func NewModel() *ConfigurationModel {
 }
 
 func (di *ConfigurationModel) CreateConfiguration(
-	dbClient pg.DatabaseAdapterInterface,
+	dbClient sl.DatabaseAdapterInterface,
 	ctx context.Context,
 	d Configuration,
 ) (*Configuration, error) {

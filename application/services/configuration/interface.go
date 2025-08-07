@@ -3,7 +3,7 @@ package configuration
 import (
 	"context"
 
-	configurationAdapter "github.com/configservice/adapter/models/config"
+	configurationAdapter "github.com/configservice/adapter/models/configuration"
 	"github.com/configservice/application/dto"
 )
 

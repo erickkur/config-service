@@ -1,14 +1,14 @@
-package config
+package configuration
 
 import (
 	"context"
 
-	pg "github.com/configservice/adapter/database/sqllite"
+	sl "github.com/configservice/adapter/database/sqllite"
 )
 
 type ConfigurationModelInterface interface {
 	CreateConfiguration(
-		dbClient pg.DatabaseAdapterInterface,
+		dbClient sl.DatabaseAdapterInterface,
 		ctx context.Context,
 		d Configuration,
 	) (*Configuration, error)

@@ -3,19 +3,19 @@ package configuration
 import (
 	"context"
 
-	pg "github.com/configservice/adapter/database/sqllite"
-	configurationAdapter "github.com/configservice/adapter/models/config"
+	sl "github.com/configservice/adapter/database/sqllite"
+	configurationAdapter "github.com/configservice/adapter/models/configuration"
 	"github.com/configservice/application/dto"
 )
 
 type Dependency struct {
 	ConfigurationModel configurationAdapter.ConfigurationModelInterface
-	DBClient           pg.DatabaseAdapterInterface
+	DBClient           sl.DatabaseAdapterInterface
 }
 
 type ConfigurationService struct {
 	configurationModel configurationAdapter.ConfigurationModelInterface
-	dbClient           pg.DatabaseAdapterInterface
+	dbClient           sl.DatabaseAdapterInterface
 }
 
 func NewConfigurationService(dependency Dependency) *ConfigurationService {
